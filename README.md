@@ -1,4 +1,4 @@
-# kokoro
+# kokoro (短時間我懶得用他 owo)
 A discord bot
 
 ## Usage
