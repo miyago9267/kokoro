@@ -1,5 +1,8 @@
-# kokoro (短時間我懶得用他 owo)
+# Kokoro Bot 0.2.0
 A discord bot
+
+## Update
+0.2.0 rewrite the whole bot owo.
 
 ## Usage
 1. Clone the repo.
@@ -10,13 +13,13 @@ nodejs main.js
 ```
 
 ## Todo
-- [ ] crawle the princess connet info 
-- [ ] gacha simi
-- [ ] chat react
-- [ ] discord role control
+- [ ] some useful command to use discord
+    - [ ] Auto Message response
+    - [ ] Other idea...
+- [ ] send some message by private msg if u are owner (70%)
 
 ## idk
-笑死 他被我荒廢了 by. myg9267 in 211102
+重構中 計畫變更 220421
 
-Update 211102
+Update 220421
 
