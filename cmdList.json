@@ -1,0 +1,8 @@
+{
+    "send": "send",
+    "status": "getStatus",
+    "mode": "setMode",
+    "server": "setServer",
+    "channel": "setChannel",
+    "off": "setOff"
+}
