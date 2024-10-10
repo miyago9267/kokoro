@@ -1,12 +1,17 @@
 {
-    "name": "Kokoro",
+    "name": "kokoro-bot",
     "version": "0.2.0",
     "description": "Kokoro bot",
+    "type": "module",
     "main": "main.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node main.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
     "author": "Miyago",
     "dependencies": {
-        "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
-        "discord.js": "^12.2.0",
-        "winston": "^3.3.3"
+        "discord.js": "^14.16.2",
+        "dotenv": "^16.0.0"
     }
 }
