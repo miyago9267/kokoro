@@ -1,25 +1,31 @@
-# Kokoro Bot 0.2.0
-A discord bot
+# Kokoro Bot 1.0.0
+
+Discord bot for sending message to specific channel with bot idenity.
 
 ## Update
-0.2.0 rewrite the whole bot owo.
+
+`1.0.0`
+
+### Features
+
+- Send message by DM bot.
+- Delete message in DM bot to remove same message in target channel.
+- Show all message in target channel immediatly in DM bot.
+
+### Change
+
+- Remove `setServer` instead use `setChannel` to set target channel.
 
 ## Usage
+
 1. Clone the repo.
-2. Make sure your envi have nodejs
-3. run
-```shell
-nodejs main.js
-```
+2. Copy `.env.example` into `.env`, then setting up `.env` file.
+3. `yarn install` or `sh setup.sh`.
+4. enjoy!
 
 ## Todo
+
 - [ ] some useful command to use discord
-    - [ ] Auto Message response
-    - [ ] Other idea...
-- [ ] send some message by private msg if u are owner (70%)
+- [ ] sending message by webview interface
 
-## idk
-重構中 計畫變更 220421
-
-Update 220421
-
+Update 101024
