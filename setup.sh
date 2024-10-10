@@ -1,15 +1,15 @@
-# install node js
+#!/bin/bash
+user="user"
+name="kokoro-bot"
 
-if [ ! -x $("command node") ]; then
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-    if [ -x $("which zsh")]; then
-        echo "export NVM_DIR=\"$HOME/.nvm\"" >> ~/.zshrc
-    else;
-        echo "export NVM_DIR=\"$HOME/.nvm\"" >> ~/.bashrc
-    fi
-    if [ -x $("command nvm") ]; then
-        nvm install node
-        nvm use node
-        npm install discord.js
-    fi
-fi
+docker build \
+    $@ -t $user/$name:latest . || exit
+[ "$(docker ps | grep $name)" ] && docker kill $name
+[ "$(docker ps -a | grep $name)" ] && docker rm $name
+
+docker run \
+	-itd \
+	-u $(id -u):$(id -g) \
+	--name $name \
+    --network host \
+	$user/$name:latest
